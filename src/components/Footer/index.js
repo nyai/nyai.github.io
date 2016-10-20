@@ -23,7 +23,7 @@ class Footer extends React.Component {
                 </h3>
                 <p>
                 { "Great! Send an email to info@ny-ai.com" }
-                { "with your presentation idea and we will get back to you." }
+                { " with your presentation idea and we will get back to you." }
                 { " We love accepting talks from the community " }
                 { "and encourage all to apply." }
                 </p>
