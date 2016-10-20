@@ -80,3 +80,18 @@
   margin-left: 40px;
   color: #fff;
 }
+
+
+/* Portrait */
+@media only screen
+  and (max-device-width: 667px) {
+    .calloutButton {
+      display: block;
+      margin-left: 0;
+    }
+
+
+    .link img {
+      width: 300px;
+    }
+}
