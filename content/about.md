@@ -1,6 +1,6 @@
 ---
-title: Phenomic base theme
-layout: About
+title: About
+layout: Page
 ---
 
 

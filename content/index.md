@@ -1,5 +1,5 @@
 ---
-title: Phenomic base theme
+title: NYAI
 layout: Page
 ---
 
