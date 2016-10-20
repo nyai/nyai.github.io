@@ -1,0 +1,8 @@
+<svg style="width: 100vw; height: 30vh" viewBox="0 0 120 140">
+  <defs>
+    <pattern id="zudvz" patternUnits="userSpaceOnUse" width="8" height="8">
+      <path d="M 0,8 l 8,-8 M -2,2 l 4,-4 M 6,10 l 4,-4" stroke-width="2" shape-rendering="auto" stroke="#343434" stroke-linecap="square"></path>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" style="fill: url(&quot;#zudvz&quot;);" />
+</svg>

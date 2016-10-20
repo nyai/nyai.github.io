@@ -1,0 +1,35 @@
+.footer {
+  color: var(--mainColorContrasted);
+  background: #2a4049;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.phenomicReference {
+  font-size: 0.75rem;
+  opacity: 0.4;
+  color: inherit;
+  text-decoration: none;
+}
+
+.phenomicReferenceName {
+  font-weight: 100;
+}
+
+h3 {
+  color: #f7fafc;
+  text-transform: uppercase;
+  font-family: tahoma;
+}
+
+.link {
+  display: block;
+  color: #f7fafc;
+  text-decoration: none;
+}
+
+p {
+  color: #f7fafc;
+  text-align: left;
+  font-size: 12px;
+}

@@ -1,0 +1,141 @@
+/* Using global sytles is not recommended, prefer local styles via CSS Modules */
+
+/*
+ * box model like it should be
+ *
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+ * kill document defaults margin & padding. We all do that all the time, right ?
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * page styles
+ */
+html {
+  min-height: 100%;
+  background: rgba(232, 232, 232, 0.4);
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  /* system font https://medium.com/designing-medium/system-shock-6b1dc6d6596f */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+/*
+ * .phenomic-HeadingAnchor
+ *
+ * anchors for markdown headings, generated via markdown renderer, so require
+ * global styling
+ */
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+
+:--headings {
+  position: relative;
+}
+
+:root {
+  --phenomic-HeadingAnchor-width: 1.4rem;
+  --phenomic-HeadingAnchor-margin: 0.4rem;
+}
+
+.phenomic-HeadingAnchor {
+  display: inline-block;
+  text-align: center;
+  margin-left: calc(-1 * (var(--phenomic-HeadingAnchor-width) + var(--phenomic-HeadingAnchor-margin)));
+  margin-right: var(--phenomic-HeadingAnchor-margin);
+  width: var(--phenomic-HeadingAnchor-width);
+  line-height: var(--phenomic-HeadingAnchor-width);
+  text-decoration: none;
+  opacity: 0.1;
+  transition: opacity 0.2s;
+
+  @nest :--headings:hover & {
+    opacity: 1;
+  }
+}
+
+/* minimal styling, prefer removing this and use local styles */
+a {
+  color: #0e63e3;
+}
+
+/* handy for content */
+img {
+  max-width: 100%;
+}
+
+.past-event-image-holder {
+  height: 150px;
+  margin-bottom: 10px;
+  background-size: contain;
+  background-position: center;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU2NkYGAwZmBgOMuAACA+CKCIMSIpwMukSCE2qxlAJiK7EaYI5gyYO41JUojuCZxWE+VxknxNVIADAK2jCtekXRZgAAAAAElFTkSuQmCC);
+}
+
+.past-event-image-holder.no-pic {
+  background-size: auto;
+  background-position: center;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAP0lEQVQoU2NkYGAwZmBgOMuAACA+CKCIMSIpwMukSCE2qxlAJiK7EaYI5gyYO41JUojuCZxWE+VxknxNVIADAK2jCtekXRZgAAAAAElFTkSuQmCC);
+}
+
+.past-event {
+  text-align: center;
+}
+
+.past-event a {
+  text-decoration: none;
+  color: #000;
+}
+.team-member-image-holder {
+  height: 250px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.riz {
+  background-image: url(/assets/riz.jpg);
+}
+.maryam {
+  background-image: url(/assets/maryam.jpg);
+}
+.matt {
+  background-image: url(/assets/matt.png);
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member a {
+  text-decoration: none;
+  color: #000;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.past-presenter {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
