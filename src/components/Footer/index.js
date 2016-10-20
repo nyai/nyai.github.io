@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router"
 import load from "little-loader"
 import styles from "./index.css"
 
@@ -54,14 +53,14 @@ class Footer extends React.Component {
                   {
                     FOOTER_LINKS.map((link) => {
                       return (
-                        <Link
+                        <a
                           key={ link }
                           className={ styles.link }
-                          to={ `/${(link === "Events" ? "" : link)
-                          .toLowerCase()}` }
+                          href={ `/${(link === "Events" ? "" : link)
+                        .toLowerCase()}` }
                         >
                           { link }
-                        </Link>
+                        </a>
                       )
                     })
                   }

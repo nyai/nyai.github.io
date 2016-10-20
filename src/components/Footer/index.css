@@ -28,6 +28,11 @@ h3 {
   text-decoration: none;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
+
 p {
   color: #f7fafc;
   text-align: left;
