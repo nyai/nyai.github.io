@@ -25,7 +25,7 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
         name: "viewport", content: "width=device-width user-scalable=no initial-scale=1 maximum-scale=1",
       } ] }
     />
-    <link rel="icon" type="image/png" href="/favicon.png"></link>
+    <link rel="icon" type="image/png" href="/Favicon.png"></link>
     <style>{ "@-ms-viewport { width: device-width; }" }</style>
   </div>
 )
