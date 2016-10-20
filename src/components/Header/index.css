@@ -34,7 +34,7 @@
 }
 
 .navPart1 .link:hover {
-  background-color: #2a4049;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
