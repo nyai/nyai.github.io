@@ -88,8 +88,17 @@
     .calloutButton {
       display: block;
       margin-left: 0;
+      margin-top: 10px;
     }
 
+
+    .navPart1 {
+      display: none;
+    }
+    .navPart2 {
+      display: block;
+      margin: 0 auto;
+    }
 
     .link img {
       width: 300px;

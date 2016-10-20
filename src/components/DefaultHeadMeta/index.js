@@ -1,3 +1,5 @@
+/* eslint max-len: ["warn", 200] */
+
 import React, { PropTypes } from "react"
 import Helmet from "react-helmet"
 
@@ -20,7 +22,7 @@ const DefaultHeadMeta = (props, { metadata: { pkg } }) => (
     { /* meta viewport safari/chrome/edge */ }
     <Helmet
       meta={ [ {
-        name: "viewport", content: "width=device-width, initial-scale=1",
+        name: "viewport", content: "width=device-width user-scalable=no initial-scale=1 maximum-scale=1",
       } ] }
     />
     <style>{ "@-ms-viewport { width: device-width; }" }</style>
